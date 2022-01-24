@@ -7,6 +7,7 @@
 <title>Negus</title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.css">
 <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="manifest"  href="manifest.json">
@@ -14,28 +15,28 @@
 </head>
 <body>
 <header id="header">
-<nav class="navbar navbar-expand-lg nav-bg fixed-top border-bottom">
+<nav class="navbar fixed-top navbar-expand-md">
 <div class="container">
-<a class="navbar-brand" href="#">EnocQ</a>
+<a class="navbar-brand" href="#">Enoch</a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <i class="fas fa-bars menu-icon"></i>
 </button>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="#home">Home</a>
+<a class="nav-link active" aria-current="page" href="#home" id="home-page">Home</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#about">about</a>
+<a class="nav-link" href="#about" id="about-page">about</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#skills">skills</a>
+<a class="nav-link" href="#skills" id="skills-page">skills</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#works">works</a>
+<a class="nav-link" href="#works" id="works-page">works</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#contact">contact</a>
+<a class="nav-link" href="#contact" id="contact-page">contact</a>
 </li>
 
 </ul>
@@ -44,9 +45,9 @@
 </nav>
 
 </header>
-<main id="main" class="swiper mySwiper" >
-<div class="swiper-wrapper">
-<section id="home" class="home swiper-slide">
+<main id="main" class="main" >
+<div class="wrapper">
+<section id="home" class="home swiper-section">
 <div class="container-fluid">
 <div class="row">
 <div class="col-12 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="100">
@@ -55,18 +56,20 @@
 	<img src="assets/images/zaki.jpg" alt="profile image" class="img-fluid skeleton">
 	</div>
 <div class="home-heading mt-3" >
-  <h5 class="text-uppercase text-center">
+  <h5 class="text-center">
     <span class="skeleton skeleton-text">Web Developer</span>
   </h5>
   <h3 class="text-black-50 text-capitalize name py-2 skeleton skeleton-text">Enoch Negus</h3>
   <div class="my-4 text-center">
-  <a href="#contact" class="button primary-button text-uppercase fw-bold text-center skeleton skeleton-text">Contact</a>
+  <button type="button" class="btn button primary-button text-uppercase fw-bold text-center skeleton skeleton-text">
+  <a href="#contact">Contact</a>
+  </button>
   </div>
   <hr class="mb-1">
   <div class="social-icons mt-3 text-center">
-    <a href="www.twitter.com/@N3GUX" class="icons p-2"><i class="fab fa-twitter"></i></a>
-    <a href="wwww.github.com/NegusDev" class="icons p-2"><i class="fab fa-github"></i></a>
-    <a href="github.com/NegusDev" class="icons p-2"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.twitter.com/@N3GUX" class="icons p-2"><i class="fab fa-twitter"></i></a>
+    <a href="https://wwww.github.com/NegusDev" class="icons p-2"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/NegusDev" class="icons p-2"><i class="fab fa-linkedin"></i></a>
   </div>
 
 </div>
@@ -77,37 +80,44 @@
 </div>
 <hr class="my-2">
 </section>
-<section id="about" class="about swiper-slide ">
+<section id="about" class="about swiper-section ">
 <div class="container">
+<div class="my-3">
+	<div class="hide">mm</div>
+	<h1 class="text-capitalize text-center title" data-aos="fade-down" data-aos-delay="100">About me</h1>
+	<h5 class="text-center section_subtitle" data-aos="fade-down" data-aos-delay="200">Who i am</h5>
+</div>
 <div class="row">
 <div class="col-md-6 ">
- <p class="info" data-aos="fade-down" data-aos-delay="100">I'm passionate about building excellent software that improves the lives of those around me, i specilaize in creating software for client ranging from individuals and small businesses all the way to large enterprise corporations. What would you do if you hard a software expert at your finger tips? </p>
+ <p class="info" data-aos="fade-down" data-aos-delay="100">I'm passionate about building excellent software that improves the lives of those around me, i specilaize in creating software for client ranging from individuals and small businesses all the way to large enterprise corporations. What would you do if you hard a software expert at your finger tips?</p>
  <div class="row experience">
- 	<div class="col-3 ms-2 rounded-2 text-center py-2 px-3"  data-aos="fade-right" data-aos-delay="200">
+ 	<div class="col-3 ms-2 rounded-2 text-center py-2 px-3"  data-aos="fade-right" data-aos-delay="300">
 		2+
         <span>
         years experience
         </span>
  	</div>
- 	<div class="col-3 ms-2 rounded-2 text-center py-2 px-3"  data-aos="fade-up" data-aos-delay="300">
+ 	<div class="col-3 ms-2 rounded-2 text-center py-2 px-3"  data-aos="fade-up" data-aos-delay="400">
  		4+
         <span>
         completed projects
         </span>
  	</div>
- 	<div class="col-3 ms-2 rounded-2 text-center py-2 px-3"  data-aos="fade-left" data-aos-delay="400">
+ 	<div class="col-3 ms-2 rounded-2 text-center py-2 px-3"  data-aos="fade-left" data-aos-delay="500">
  		1
         <span>
         company worked
         </span>
  	</div>
  </div>
- <div class="site-buttons mt-4 mb-3"  data-aos="flip-up" data-aos-delay="500">
-<a href="EnochCV.docx" class="button primary-button text-uppercase">Download Cv</a>
+ <div class="site-buttons mt-4 mb-3"  data-aos="flip-up" data-aos-delay="600">
+ 	<button type="button" class="btn button primary-button text-uppercase fw-bold text-center skeleton skeleton-text">
+		<a href="EnochCV.docx" class="text-uppercase">Download Cv</a>
+  </button>
 </div>
 </div>
 <div class="col-md-6 mb-5">
-<div class="about-image " data-aos="zoom-in" data-aos-delay="200">
+<div class="about-image " data-aos="zoom-in" data-aos-delay="300">
 	<a href="assets/images/zaki.jpg">	
 		<img src="assets/images/zaki.jpg" alt="about image" class="img-fluid rounded-2 abt-img">
 	</a>
@@ -116,14 +126,14 @@
 </div>
 </div>				
 </section>
-<section id="skills" class="skills swiper-slide overflow-hidden" data-aos="zoom-in" data-aos-delay="100">
-	<div class="container">
+<section id="skills" class="skills swiper-section overflow-hidden" >
+	<div class="container" data-aos="zoom-in" data-aos-delay="100">
 	<h1 class="text-capitalize text-center title">skills</h1>
 	<h5 class="text-center section_subtitle">My technical level</h5>
 	<div class="row">
 	    <div class="col-md-6  my-2">
 	<div class="skill-item" data-aos="fade-left" data-aos-delay="200">
-	<span class="skill">html<i class="val">80%</i></span>
+	<span class="skill">html5<i class="val">80%</i></span>
 	<div class="bar-expand " ><div id="anime" class="html"></div></div>
 	</div>
 	</div>
@@ -171,14 +181,56 @@
 	</div>
 	</div>				
 </section>
-<section id="work" class="work swiper-slide">
-<div class="container-fluid">
+<section id="works" class="work swiper-section">
+<div class="container">
 	<h1 class="text-capitalize text-center title">Works</h1>
 	<h5 class="text-center section_subtitle">My portfolio</h5>
-<div>portfolio</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="swiper mySwiper2  ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide shadow-lg" >
+            	<div class="row d-flex justify-content-center">
+            		<div class="col-sm-4">
+            			<div class="img-slider">
+            				<!-- <img src="assets/images/zaki.jpg" class="img-fluid"/> -->
+            				<video controls class="w-100 h-100">
+            					<source src="assets/images/vid1.mp4" type="video/mp4">
+            				</video>
+            			</div>
+            		</div>
+            		<div class="col-sm-7 text-white-50 ">
+            			<div class="text-slide">
+            				<h3>Grocery management system</h3>
+	            			<p>
+	            				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		            			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		            			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		            			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	            			</p>
+	            			<button type="button" class="btn button-2 secondary-button text-uppercase fw-bold text-center skeleton skeleton-text">
+											<a href="" class="text-uppercase">View code</a>
+									  </button>
+            			</div>
+
+            		</div>
+            	</div>
+            	
+            </div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+          </div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+				</div>
+			</div>
 </div>				
 </section>
-<section id="contact" class="contact swiper-slide">
+<section id="contact" class="contact swiper-section">
 <div class="container">
 <h1 class="text-capitalize text-center title" data-aos="zoom-in" data-aos-delay="100">contact me</h1>
 <h5 class="text-center section_subtitle" data-aos="zoom-in" data-aos-delay="200">Get in touch</h5>
@@ -192,7 +244,7 @@
 	<div class="col-6" data-aos="fade-left" data-aos-delay="300">
 		<div class="phone d-flex flex-column text-center pt-3 mt-3 rounded-2">
 			<i class="fas fa-mobile-alt"></i>
-			<p >+(256)754603654</p>
+			<p >+(256) 754-603-654</p>
 		</div>
 	</div>
 </div>
@@ -211,7 +263,7 @@
 		    <label for="exampleInputPassword1" class="form-label">Message</label>
           	<textarea class="form-control form-message" id="message" ></textarea>
 		  </div>
-		  <button type="submit" class="btn w-100 rounded-3">Submit</button>
+		  <button type="submit" class="btn w-100 rounded-3 button-2 secondary-button">Submit</button>
 		</form>
 	</div>
 </div>
@@ -222,6 +274,7 @@
 </main>
 
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper-bundle.js"></script>
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/main.js"></script>
