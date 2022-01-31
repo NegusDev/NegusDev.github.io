@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 :root {
   --header-height: 3rem;
   /*====colors===*/
@@ -25,6 +26,7 @@ html, body {
 	height: 100%;
 	/*background: #191A1D;*/
   background: #131312 !important;  
+  font-family: 'Ubuntu', sans-serif !important;
 
 }
 body {
@@ -317,7 +319,7 @@ object-fit: cover;
 }
 #about p.info {
 	color: #fff !important;
-	font-weight: 700;
+	font-weight: 300;
 }
 .experience > div {
 	color: #fff;
