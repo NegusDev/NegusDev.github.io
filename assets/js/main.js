@@ -60,7 +60,6 @@ $(document).ready(function(){
 
 
 const swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 50,
   loop: true,
   mousewheel:true,
   keyboard: true,
@@ -75,23 +74,20 @@ const swiper2 = new Swiper(".mySwiper2", {
 
 });
 
-// const swiper = new Swiper(".mySwiper", {
-//       // Optional parameters
-//   direction: 'vertical',
-//   slidesPerView: 'auto',
+const swiper = new Swiper(".mySwiper", {
+      // Optional parameters
+  direction:'horizontal', 
+  loop: true,
+  mousewheel:true,
+  keyboard: true,
 
-//   loop: false,
+  // If we need pagination
+  pagination: {
+   el: ".swiper-pagination",
+      clickable: true,
+  },
+  spaceBetween: 50,
 
-//   // If we need pagination
-//   pagination: {
-//    el: ".swiper-pagination",
-//       clickable: true,
-//   },
+  });
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   }
-
-//   });
+console.log(swiper);

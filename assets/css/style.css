@@ -90,12 +90,12 @@ object-fit: cover;
 .swiper-pagination-bullet-active {
 	background-color: rgb(132, 0, 255) !important;
 	font-size: 50px;
-	display: none;
+	/*display: none;*/
 	width: 2.5rem !important;
 	height: 2.5rem !important;
 }
 .swiper-pagination {
-	display: none;
+	/*display: none;*/
 }
 .swiper-pagination-bullet {
 	width: .8rem !important;
@@ -483,12 +483,17 @@ h5.section_subtitle {
 	background-color: #fff800;
 	background: -webkit-linear-gradient(-255deg, #a6ffcb, #12d8fa, #fff800);
 	background: linear-gradient(-255deg, #a6ffcb, #12d8fa, #fff800);
+	margin-top: 0;
 	background-size: 100%;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-moz-text-fill-color: transparent;
 
+}
+.text-slide span {
+	font-size: .978rem !important;
+	margin: 0 !important;
 }
 
 /* COMTACT */
@@ -651,6 +656,9 @@ p.info {
 .text-slide h3 {
 	font-size: 1rem !important;
 	margin-top: .944rem !important;
+}
+.text-slide span {
+	font-size: .89rem !important;
 }
 .email p,
 .phone p{
