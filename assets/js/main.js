@@ -21,29 +21,29 @@ $(document).ready(function(){
   const works = document.querySelector('#works-page');
   const contact = document.querySelector('#contact-page');
   let scrollPos = window.scrollY
-  // console.log(scrollPos);
+  console.log(scrollPos);
 
   // adds highlight class to my menu items
   if (window.innerWidth > 768 && scrollPos < 550) {
     home.classList.add('highlight')
     about.classList.remove('highlight')
     return
-  }else if (window.innerWidth > 768 && scrollPos < 1260) {
+  }else if (window.innerWidth > 768 && scrollPos < 1399) {
     about.classList.add('highlight')
     home.classList.remove('highlight')
     skills.classList.remove('highlight')
     return
-  }else if (window.innerWidth > 768 && scrollPos < 1789) {
+  }else if (window.innerWidth > 768 && scrollPos < 1947) {
     skills.classList.add('highlight')
     about.classList.remove('highlight')
     works.classList.remove('highlight')
     return
-  } else if (window.innerWidth > 768 && scrollPos < 2050) {
+  } else if (window.innerWidth > 768 && scrollPos < 3520) {
     works.classList.add('highlight')
     skills.classList.remove('highlight')
     contact.classList.remove('highlight')
     return
-  } else if (window.innerWidth > 768 && scrollPos < 2573) {
+  } else if (window.innerWidth > 768 && scrollPos < 4200) {
     contact.classList.add('highlight')
     works.classList.remove('highlight')
     return
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 
 const swiper2 = new Swiper(".mySwiper2", {
-  loop: true,
+  loop: false,
   mousewheel:true,
   keyboard: true,
   pagination: {
@@ -75,9 +75,8 @@ const swiper2 = new Swiper(".mySwiper2", {
 });
 
 const swiper = new Swiper(".mySwiper", {
-      // Optional parameters
-  direction:'horizontal', 
-  loop: true,
+      // Optional parameters 
+  loop: false,
   mousewheel:true,
   keyboard: true,
 
@@ -86,8 +85,23 @@ const swiper = new Swiper(".mySwiper", {
    el: ".swiper-pagination",
       clickable: true,
   },
-  spaceBetween: 50,
+  spaceBetween: 50
 
-  });
+});
 
-console.log(swiper);
+const auto = new AutoTyping({
+      id: 'career-text',
+      typeText: ['Web developer', 'Jr Software developer'],
+      textColor: '#fff',
+      typeSpeed: 50,
+      typeRandom: true,
+      typeDelay: 200,
+      cursor: '|',
+      cursorColor: '#28a745',
+      cursorSpeed: 200,
+      deleteSpeed: 50,
+      deleteDelay: 2000,
+      typeInfinity: true,
+    }).init();
+
+
