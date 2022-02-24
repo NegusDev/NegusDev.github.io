@@ -694,9 +694,8 @@ p.info {
 	/*position: relative;*/
 	font-size: 2rem;
 }
-.move-up span {
-	background: red;
-	
+.move-up span > i {
+	color: red;
 }
 /*.form button {
 }*/
