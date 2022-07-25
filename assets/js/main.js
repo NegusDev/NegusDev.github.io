@@ -11,7 +11,13 @@ $(document).ready(function(){
 
   AOS.init();
 });
+(() => {
+  'use strict'
 
+  document.querySelector('#navbarSideCollapse').addEventListener('click', () => {
+    document.querySelector('.offcanvas-collapse').classList.toggle('open')
+  })
+})()
 // show active menu when scrolling
  const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
