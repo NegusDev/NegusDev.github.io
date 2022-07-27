@@ -16,6 +16,8 @@ $(document).ready(function(){
 
   document.querySelector('#navbarSideCollapse').addEventListener('click', () => {
     document.querySelector('.offcanvas-collapse').classList.toggle('open')
+    document.querySelector('.fa-bars').classList.toggle('fa-times')
+    document.querySelector('.navbar').classList.toggle('shadow-sm')
   })
 })()
 // show active menu when scrolling
