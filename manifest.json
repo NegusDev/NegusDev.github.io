@@ -1,8 +1,8 @@
 {
 	"name": "Enoch Negus",
 	"short_name": "Enoch",
-	"start_url": "/simple-projects/Enoch/",
-	"scope": "/simple-projects/Enoch/",
+	"start_url": "https://negudev.github.io",
+	"scope": "https://negudev.github.io",
 	"background_color": "#4B6CC1",
 	"theme_color": "#191A1D",
 	"display": "standalone",
